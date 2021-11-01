@@ -49,6 +49,10 @@
 </h1></div>
 
     
+<section class="desc markdown">
+  <p>Flutter library for RICOH THETA cameras
+requires use of the theta package</p>
+</section>
 
 
     <section class="summary offset-anchor" id="classes">
@@ -60,7 +64,8 @@
 
 </dt>
 <dd>
-   
+  label: 'new label',
+example   <code>label: 'DELETE EVERYTHING',</code> 
 </dd>
 
         <dt id="DeleteAllImagesButton">
@@ -380,7 +385,9 @@
 
 </dt>
 <dd>
-   
+  shows a window with syntax highlighting and line numbering.
+It is an Expanded Widget.  You can specify the space
+it takes up with flex. <a href="../thetaf/ThetaSyntaxWindow-class.html">[...]</a>
 </dd>
 
         <dt id="ThetaWindow">
@@ -388,7 +395,10 @@
 
 </dt>
 <dd>
-   
+  root window for all thetaf widgets
+all other widgets must be wrapped inside a ThetaWindow
+widget.
+import 'package:thetaf/thetaf.dart'; <a href="../thetaf/ThetaWindow-class.html">[...]</a>
 </dd>
 
         <dt id="ThumbWindow">
@@ -396,7 +406,8 @@
 
 </dt>
 <dd>
-   
+  displays a list of thumbs in grid view with 2 thumbs
+across on the horizontal axis. 
 </dd>
 
         <dt id="Z1GetOptionsButton">
@@ -426,7 +437,12 @@
 
 </dt>
 <dd>
-   
+  takes picture and then sets showThumbWindow to true
+after camera is ready.  While the camera is processing
+the picture, shows the status as a string.  The Z1 takes
+after 4 seconds to be ready for a picture. The SC2
+make take more than 8 seconds.
+The delay is due to internal stitching times. 
   
 
 </dd>
