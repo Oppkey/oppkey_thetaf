@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+/// Simplified OutlinedButton that can receive parameters for
+/// textColor, backgroundColor of the button, fontSize, and label.
+/// Most of the buttons use the more powerful OutlinedButton with
+/// more styling control. The [ThetaSimpleButton] uses a smaller
+/// subset of styling options to make the syntax easier to read.
 class ThetaSimpleButton extends StatelessWidget {
   final String label;
   final Function action;

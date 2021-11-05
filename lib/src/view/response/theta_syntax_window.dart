@@ -9,6 +9,8 @@ import 'package:thetaf/src/model/response_notifier.dart';
 /// ```
 /// ThetaSyntaxWindow(flex: 10)
 /// ```
+/// The text if the [ThetaSyntaxWindow] cannot be selected.  To use
+/// a window with selectable text, use [ResponseWindow]
 class ThetaSyntaxWindow extends StatelessWidget {
   final int flex;
   final double fontSize;

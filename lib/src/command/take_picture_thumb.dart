@@ -5,6 +5,15 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:thetaf/src/model/window_notifier.dart';
 
+/// use with [ThumbWindow] to take a picture and then display the thumbnails.
+/// [ThumbWindow] combines a [ResponseWindow] with a window that will display
+/// the thumbnails that are on the camera.  This function will first wait
+/// for the current picture to be processed and then will get the
+/// last 5 thumbs, including the thumb for the picture you just took.
+/// It will display the status of the current image processing after the
+/// shutter is triggered as text messages, then pull the thumb bytes down from the
+/// camera and then send the
+/// list of 5 thumbs to [ThumbWindow]
 Future<void> takePictureThumb(BuildContext context) async {
   Stopwatch stopwatch = Stopwatch();
   stopwatch.start();

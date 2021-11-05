@@ -185,7 +185,11 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Shows live preview motion jpeg from the RICOH THETA camera
+Live preview is a stream and is managed by a <a href="https://api.flutter.dev/flutter/dart-async/StreamController-class.html">StreamController</a>.
+You must pass the StreamController. See this video
+for instructions. <a href="https://youtu.be/GrexxLqt2ak">https://youtu.be/GrexxLqt2ak</a>
+See this code example <a href="https://github.com/codetricity/theta_preview_tutorial_2/blob/main/lib/main.dart">https://github.com/codetricity/theta_preview_tutorial_2/blob/main/lib/main.dart</a> 
 </dd>
 
         <dt id="ResetButton">
@@ -432,7 +436,10 @@ import 'package:thetaf/thetaf.dart'; <a href="../thetaf/ThetaWindow-class.html">
 </dt>
 <dd>
   displays a list of thumbs in grid view with 2 thumbs
-across on the horizontal axis. 
+across on the horizontal axis. Each thumbnail will try to take up
+500px if space is available.
+It can display any number of thumbs that are saved in thumbData
+which is handled by the Provider package for state management. 
 </dd>
 
         <dt id="Z1GetOptionsButton">
@@ -480,7 +487,15 @@ The delay is due to internal stitching times.
 
 </dt>
 <dd>
-   
+  use with <a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a> to take a picture and then display the thumbnails.
+<a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a> combines a <a href="../thetaf/ResponseWindow-class.html">ResponseWindow</a> with a window that will display
+the thumbnails that are on the camera.  This function will first wait
+for the current picture to be processed and then will get the
+last 5 thumbs, including the thumb for the picture you just took.
+It will display the status of the current image processing after the
+shutter is triggered as text messages, then pull the thumb bytes down from the
+camera and then send the
+list of 5 thumbs to <a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a> 
   
 
 </dd>
