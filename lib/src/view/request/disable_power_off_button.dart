@@ -8,6 +8,7 @@ class DisablePowerOffButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const DisablePowerOffButton({
     Key? key,
@@ -15,6 +16,7 @@ class DisablePowerOffButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'Disable Power Off',
   }) : super(key: key);
 
   @override
@@ -46,6 +48,6 @@ class DisablePowerOffButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('disable power off'));
+        child: Text(label));
   }
 }

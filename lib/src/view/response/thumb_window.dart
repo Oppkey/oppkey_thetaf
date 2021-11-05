@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:thetaf/src/model/window_notifier.dart';
 
+/// displays a list of thumbs in grid view with 2 thumbs
+/// across on the horizontal axis.
 class ThumbWindow extends StatelessWidget {
   final int flex;
   const ThumbWindow({

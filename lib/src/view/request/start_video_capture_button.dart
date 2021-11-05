@@ -8,6 +8,7 @@ class StartVideoCaptureButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const StartVideoCaptureButton({
     Key? key,
@@ -15,6 +16,7 @@ class StartVideoCaptureButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'Start Video Capture',
   }) : super(key: key);
 
   @override
@@ -29,6 +31,6 @@ class StartVideoCaptureButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('start video capture'));
+        child: Text(label));
   }
 }

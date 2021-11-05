@@ -8,6 +8,7 @@ class SetFilterNoiseReductionButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const SetFilterNoiseReductionButton({
     Key? key,
@@ -15,6 +16,7 @@ class SetFilterNoiseReductionButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = "Noise reduct.",
   }) : super(key: key);
 
   @override
@@ -47,6 +49,6 @@ class SetFilterNoiseReductionButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('set _filter to Noise Reduction'));
+        child: Text(label));
   }
 }

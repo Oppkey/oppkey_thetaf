@@ -8,6 +8,7 @@ class DeleteAllVideosButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const DeleteAllVideosButton({
     Key? key,
@@ -15,6 +16,7 @@ class DeleteAllVideosButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'DELETE ALL VIDEOS',
   }) : super(key: key);
 
   @override
@@ -31,6 +33,6 @@ class DeleteAllVideosButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('delete all videos (videos only)'));
+        child: Text(label));
   }
 }

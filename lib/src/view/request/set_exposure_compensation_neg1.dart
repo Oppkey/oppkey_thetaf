@@ -8,6 +8,7 @@ class SetExposureCompensationneg1Button extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const SetExposureCompensationneg1Button({
     Key? key,
@@ -15,6 +16,7 @@ class SetExposureCompensationneg1Button extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'EV -1.0',
   }) : super(key: key);
 
   @override
@@ -47,6 +49,6 @@ class SetExposureCompensationneg1Button extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('set exposure compensation to -1'));
+        child: Text(label));
   }
 }

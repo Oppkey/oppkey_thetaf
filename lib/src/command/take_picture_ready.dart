@@ -5,6 +5,12 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:thetaf/src/model/window_notifier.dart';
 
+/// takes picture and then sets showThumbWindow to true
+/// after camera is ready.  While the camera is processing
+/// the picture, shows the status as a string.  The Z1 takes
+/// after 4 seconds to be ready for a picture. The SC2
+/// make take more than 8 seconds.
+/// The delay is due to internal stitching times.
 Future<void> takePictureReady(BuildContext context) async {
   Stopwatch stopwatch = Stopwatch();
   stopwatch.start();

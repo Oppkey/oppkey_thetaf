@@ -16,7 +16,7 @@ class SetAperture2dot1Button extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = '2.1',
+    this.label = 'F2.1',
   }) : super(key: key);
 
   @override

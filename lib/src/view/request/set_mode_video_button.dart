@@ -8,6 +8,7 @@ class SetModeVideoButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const SetModeVideoButton({
     Key? key,
@@ -15,6 +16,7 @@ class SetModeVideoButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'Set Mode to Video',
   }) : super(key: key);
 
   @override
@@ -46,6 +48,6 @@ class SetModeVideoButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('Set mode to Video'));
+        child: Text(label));
   }
 }

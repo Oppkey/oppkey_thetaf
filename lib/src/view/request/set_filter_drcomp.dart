@@ -8,6 +8,7 @@ class SetFilterDrcompButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const SetFilterDrcompButton({
     Key? key,
@@ -15,6 +16,7 @@ class SetFilterDrcompButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = "DR compensat.",
   }) : super(key: key);
 
   @override
@@ -46,6 +48,6 @@ class SetFilterDrcompButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('set _filter to DR Comp'));
+        child: Text(label));
   }
 }

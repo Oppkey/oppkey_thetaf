@@ -8,6 +8,7 @@ class List5VideosButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const List5VideosButton({
     Key? key,
@@ -15,6 +16,7 @@ class List5VideosButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'List 5 videos',
   }) : super(key: key);
 
   @override
@@ -33,6 +35,6 @@ class List5VideosButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('list 5 videos'));
+        child: Text(label));
   }
 }

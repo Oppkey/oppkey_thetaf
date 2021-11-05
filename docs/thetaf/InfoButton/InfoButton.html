@@ -50,10 +50,12 @@
 </h1></div>
 
     <section class="multi-line-signature">const
-      <span class="name ">InfoButton</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-textColor">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">textColor</span> = <span class="default-value">Colors.black</span>, </span></li>
-<li><span class="parameter" id="-param-backgroundColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">backgroundColor</span> = <span class="default-value">Colors.white</span>, </span></li>
-<li><span class="parameter" id="-param-fontSize"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">fontSize</span> = <span class="default-value">14.0</span>, </span></li>
-<li><span class="parameter" id="-param-key"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>}</span></li>
+      <span class="name ">InfoButton</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-key">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span></li>
+<li><span class="parameter" id="-param-style"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/material/ButtonStyle-class.html">ButtonStyle</a>?</span> <span class="parameter-name">style</span>, </span></li>
+<li><span class="parameter" id="-param-focusNode"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/FocusNode-class.html">FocusNode</a>?</span> <span class="parameter-name">focusNode</span>, </span></li>
+<li><span class="parameter" id="-param-autofocus"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autofocus</span> = <span class="default-value">false</span>, </span></li>
+<li><span class="parameter" id="-param-clipBehavior"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ui/Clip-class.html">Clip</a></span> <span class="parameter-name">clipBehavior</span> = <span class="default-value">Clip.none</span>, </span></li>
+<li><span class="parameter" id="-param-label"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">label</span> = <span class="default-value">&#39;Info&#39;</span>}</span></li>
 </ol>)
     </section>
 
@@ -64,10 +66,12 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">const InfoButton({
-  this.textColor = Colors.black,
-  this.backgroundColor = Colors.white,
-  this.fontSize = 14.0,
   Key? key,
+  this.style,
+  this.focusNode,
+  this.autofocus = false,
+  this.clipBehavior = Clip.none,
+  this.label = &#39;Info&#39;,
 }) : super(key: key);</code></pre>
 </section>
 
@@ -99,12 +103,14 @@
     <li class="section-title">
       <a href="../../thetaf/InfoButton-class.html#instance-properties">Properties</a>
     </li>
-    <li><a href="../../thetaf/InfoButton/backgroundColor.html">backgroundColor</a></li>
-    <li><a href="../../thetaf/InfoButton/fontSize.html">fontSize</a></li>
+    <li><a href="../../thetaf/InfoButton/autofocus.html">autofocus</a></li>
+    <li><a href="../../thetaf/InfoButton/clipBehavior.html">clipBehavior</a></li>
+    <li><a href="../../thetaf/InfoButton/focusNode.html">focusNode</a></li>
     <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
     <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
+    <li><a href="../../thetaf/InfoButton/label.html">label</a></li>
     <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
-    <li><a href="../../thetaf/InfoButton/textColor.html">textColor</a></li>
+    <li><a href="../../thetaf/InfoButton/style.html">style</a></li>
 
     <li class="section-title"><a href="../../thetaf/InfoButton-class.html#instance-methods">Methods</a></li>
     <li><a href="../../thetaf/InfoButton/build.html">build</a></li>

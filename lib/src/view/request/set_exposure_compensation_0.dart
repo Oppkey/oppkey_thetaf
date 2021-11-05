@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// [label] EV is Exposure Compensation. It works in automatic mode. This
+/// button sets EV to 0.
 class SetExposureCompensation0Button extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -16,7 +18,7 @@ class SetExposureCompensation0Button extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = 'set exposure compensation to 0',
+    this.label = 'EV 0.0',
   }) : super(key: key);
 
   @override

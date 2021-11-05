@@ -8,14 +8,16 @@ class SetFilterHhhdrButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
-  const SetFilterHhhdrButton({
-    Key? key,
-    this.style,
-    this.focusNode,
-    this.autofocus = false,
-    this.clipBehavior = Clip.none,
-  }) : super(key: key);
+  const SetFilterHhhdrButton(
+      {Key? key,
+      this.style,
+      this.focusNode,
+      this.autofocus = false,
+      this.clipBehavior = Clip.none,
+      this.label = 'Handheld HDR'})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +48,6 @@ class SetFilterHhhdrButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('set _filter to Hh hdr'));
+        child: Text(label));
   }
 }

@@ -6,6 +6,7 @@ class TakePictureButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const TakePictureButton({
     Key? key,
@@ -13,6 +14,7 @@ class TakePictureButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'Take Picture',
   }) : super(key: key);
 
   @override
@@ -23,6 +25,6 @@ class TakePictureButton extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () => takePictureThumb(context),
-        child: const Text('take picture'));
+        child: Text(label));
   }
 }

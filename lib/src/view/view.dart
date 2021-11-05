@@ -37,3 +37,6 @@ export 'request/set_aperture_0_button.dart';
 export 'request/set_aperture_2dot1_button.dart';
 export 'request/set_aperture_3dot5_button.dart';
 export 'request/set_aperture_5dot6_button.dart';
+export 'request/set_athentication_none_button.dart';
+export 'request/set_athentication_digest_button.dart';
+export 'request/set_autobracket_numbers_button.dart';

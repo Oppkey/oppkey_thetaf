@@ -8,6 +8,7 @@ class EnableSleepDelayButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const EnableSleepDelayButton({
     Key? key,
@@ -15,6 +16,7 @@ class EnableSleepDelayButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'Enable Sleep Delay',
   }) : super(key: key);
 
   @override
@@ -29,6 +31,6 @@ class EnableSleepDelayButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('enable sleep delay'));
+        child: Text(label));
   }
 }

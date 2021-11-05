@@ -7,9 +7,14 @@ class ExposureProgramButton extends StatelessWidget {
   final ButtonStyle? style;
   final double height;
   final double width;
+  final String label;
 
   const ExposureProgramButton(
-      {Key? key, this.style, this.width = 300, this.height = 40})
+      {Key? key,
+      this.style,
+      this.width = 300,
+      this.height = 40,
+      this.label = 'Exposure Program'})
       : super(key: key);
 
   @override
@@ -19,7 +24,7 @@ class ExposureProgramButton extends StatelessWidget {
       width: width,
       child: Row(
         children: [
-          const Text('exposure program'),
+          Text(label),
           DropdownButton(
             items: <String>['manual', 'normal', 'aperture', 'shutter', 'iso']
                 .map<DropdownMenuItem<String>>((String value) {

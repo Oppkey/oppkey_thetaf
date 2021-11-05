@@ -16,7 +16,7 @@ class SetAperture0Button extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = '0',
+    this.label = '0 (AUTO)',
   }) : super(key: key);
 
   @override

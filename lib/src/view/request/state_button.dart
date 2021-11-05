@@ -2,30 +2,35 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
-import 'package:thetaf/src/view/component/simple_button.dart';
 
 class StateButton extends StatelessWidget {
-  final double fontSize;
-  final Color textColor;
-  final Color backgroundColor;
+  final ButtonStyle? style;
+  final FocusNode? focusNode;
+  final bool autofocus;
+  final Clip clipBehavior;
+  final String label;
+
   const StateButton({
-    this.fontSize = 14.0,
-    this.textColor = Colors.black,
-    this.backgroundColor = Colors.white,
     Key? key,
+    this.style,
+    this.focusNode,
+    this.autofocus = false,
+    this.clipBehavior = Clip.none,
+    this.label = 'State',
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ThetaSimpleButton(
-        fontSize: fontSize,
-        backgroundColor: backgroundColor,
-        textColor: textColor,
-        action: () async {
+    return OutlinedButton(
+        style: style,
+        focusNode: focusNode,
+        autofocus: autofocus,
+        clipBehavior: clipBehavior,
+        onPressed: () async {
           var response = await ThetaBase.post('state');
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        label: 'state');
+        child: Text(label));
   }
 }

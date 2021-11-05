@@ -107,16 +107,17 @@ and</li>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 Widget build(BuildContext context) {
-  return ThetaSimpleButton(
-      fontSize: fontSize,
-      backgroundColor: backgroundColor,
-      textColor: textColor,
-      action: () async {
+  return OutlinedButton(
+      style: style,
+      focusNode: focusNode,
+      autofocus: autofocus,
+      clipBehavior: clipBehavior,
+      onPressed: () async {
         var response = await getZ1Options();
         Provider.of&lt;ResponseNotifier&gt;(context, listen: false)
             .setResponseText(response);
       },
-      label: &#39;Z1 options&#39;);
+      child: Text(label));
 }</code></pre>
 </section>
 
@@ -148,12 +149,14 @@ Widget build(BuildContext context) {
     <li class="section-title">
       <a href="../../thetaf/Z1GetOptionsButton-class.html#instance-properties">Properties</a>
     </li>
-    <li><a href="../../thetaf/Z1GetOptionsButton/backgroundColor.html">backgroundColor</a></li>
-    <li><a href="../../thetaf/Z1GetOptionsButton/fontSize.html">fontSize</a></li>
+    <li><a href="../../thetaf/Z1GetOptionsButton/autofocus.html">autofocus</a></li>
+    <li><a href="../../thetaf/Z1GetOptionsButton/clipBehavior.html">clipBehavior</a></li>
+    <li><a href="../../thetaf/Z1GetOptionsButton/focusNode.html">focusNode</a></li>
     <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
     <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
+    <li><a href="../../thetaf/Z1GetOptionsButton/label.html">label</a></li>
     <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
-    <li><a href="../../thetaf/Z1GetOptionsButton/textColor.html">textColor</a></li>
+    <li><a href="../../thetaf/Z1GetOptionsButton/style.html">style</a></li>
 
     <li class="section-title"><a href="../../thetaf/Z1GetOptionsButton-class.html#instance-methods">Methods</a></li>
     <li><a href="../../thetaf/Z1GetOptionsButton/build.html">build</a></li>

@@ -3,6 +3,12 @@ import 'package:flutter_syntax_view/flutter_syntax_view.dart';
 import 'package:provider/provider.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// shows a window with syntax highlighting and line numbering.
+/// It is an Expanded Widget.  You can specify the space
+/// it takes up with flex.
+/// ```
+/// ThetaSyntaxWindow(flex: 10)
+/// ```
 class ThetaSyntaxWindow extends StatelessWidget {
   final int flex;
   final double fontSize;

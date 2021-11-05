@@ -8,6 +8,7 @@ class ResetButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const ResetButton({
     Key? key,
@@ -15,6 +16,7 @@ class ResetButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'Reset',
   }) : super(key: key);
 
   @override
@@ -29,6 +31,6 @@ class ResetButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('reset'));
+        child: Text(label));
   }
 }

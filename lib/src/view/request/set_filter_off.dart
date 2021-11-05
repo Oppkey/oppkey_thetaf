@@ -8,6 +8,7 @@ class SetFilterOffButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const SetFilterOffButton({
     Key? key,
@@ -15,6 +16,7 @@ class SetFilterOffButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = "OFF",
   }) : super(key: key);
 
   @override
@@ -46,6 +48,6 @@ class SetFilterOffButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('set _filter to off'));
+        child: Text(label));
   }
 }

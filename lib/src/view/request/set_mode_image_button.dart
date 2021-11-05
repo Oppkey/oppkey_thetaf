@@ -8,6 +8,7 @@ class SetModeImageButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const SetModeImageButton({
     Key? key,
@@ -15,6 +16,7 @@ class SetModeImageButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'Set Mode to Image',
   }) : super(key: key);
 
   @override
@@ -46,6 +48,6 @@ class SetModeImageButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('Set mode to Image'));
+        child: Text(label));
   }
 }

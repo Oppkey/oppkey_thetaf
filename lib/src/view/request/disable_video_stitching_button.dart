@@ -16,7 +16,7 @@ class DisableVideoStitchingButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = 'Disable',
+    this.label = 'Disable Video Stitching',
   }) : super(key: key);
 
   @override

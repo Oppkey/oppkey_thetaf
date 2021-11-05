@@ -8,6 +8,7 @@ class DeleteAllImagesButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const DeleteAllImagesButton({
     Key? key,
@@ -15,6 +16,7 @@ class DeleteAllImagesButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'DELETE ALL IMAGES',
   }) : super(key: key);
 
   @override
@@ -32,6 +34,6 @@ class DeleteAllImagesButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('DO NOT USE - delete all images (images only)'));
+        child: Text(label));
   }
 }

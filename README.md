@@ -36,6 +36,9 @@ start using the package. -->
 
 * RICOH THETA must be connected to development workstation using Wi-Fi with
 the camera as the access point
+* the theta package must be installed
+
+![package requirements](readme_assets/images/package_requirements.png)
 
 ## Usage
 
