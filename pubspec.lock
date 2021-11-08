@@ -43,6 +43,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.15.0"
+  dio:
+    dependency: transitive
+    description:
+      name: dio
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -250,10 +257,12 @@ packages:
   theta:
     dependency: "direct main"
     description:
-      path: "../theta"
-      relative: true
-    source: path
-    version: "0.1.0"
+      path: "."
+      ref: HEAD
+      resolved-ref: c5d91f183bbf31d818f6910a587f08a8a7f89b41
+      url: "https://github.com/Oppkey/oppkey_theta.git"
+    source: git
+    version: "0.3.0"
   typed_data:
     dependency: transitive
     description:
@@ -285,4 +294,3 @@ packages:
 sdks:
   dart: ">=2.14.3 <3.0.0"
   flutter: ">=2.5.2"
-  http: ">=0.12.2 <0.13.0"
