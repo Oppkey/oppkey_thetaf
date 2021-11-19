@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 2.0.0">
+  <meta name="description" content="thetaf API docs, for the Dart programming language.">
+  <title>thetaf - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href=""
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">thetaf package</li>
+  </ol>
+  <div class="self-name">thetaf</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="thetaf">thetaf</h1>
+<p>Flutter widgets for RICOH THETA camera application prototyping.
+Package is intended for API testing and rapid prototyping.
+This is not suitable for production applications.</p>
+<h2 id="features">Features</h2><!-- TODO: List what your package can do. Maybe include images, gifs, or videos. -->
+<ul>
+<li>API request and response for <a href="https://api.ricoh/docs/theta-web-api-v2.1/">RICOH THETA WebAPI v2.1</a></li>
+<li>Widgets can be used on iOS, Android, and desktop. Web is not supported.</li>
+</ul>
+<p><img src="readme_assets/images/home_screen.png" alt="use screen"></p>
+<p><img src="readme_assets/images/admin_screen.png" alt="home screen"></p>
+<h2 id="getting-started">Getting started</h2><!-- 
+TODO: List prerequisites and provide or point to information on how to
+start using the package. -->
+<ul>
+<li>RICOH THETA must be connected to development workstation using Wi-Fi with
+the camera as the access point</li>
+<li>the theta package must be installed</li>
+</ul>
+<p><img src="readme_assets/images/package_requirements.png" alt="package requirements"></p>
+<h2 id="usage">Usage</h2>
+<h3 id="start-with-thetawindow-as-root-widget-under-scaffold">Start with <code>ThetaWindow</code> as root widget under <code>Scaffold</code></h3>
+<pre class="language-dart"><code class="language-dart">import 'package:thetaf/thetaf.dart';
+...
+return MaterialApp(
+    home: Scaffold(
+        body: ThetaWindow(
+            child: Column(
+
+</code></pre>
+<h3 id="put-thetaf-widgets-as-children-of-thetawindow">Put thetaf widgets as children of <code>ThetaWindow</code></h3>
+<h2 id="additional-information">Additional information</h2><!-- 
+TODO: Tell users more about the package: where to find more information, how to 
+contribute to the package, how to file issues, what response they can expect 
+from the package authors, and more. -->
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="thetaf">
+  <span class="name"><a href="thetaf/thetaf-library.html">thetaf</a></span> 
+
+</dt>
+<dd>Flutter library for RICOH THETA cameras
+requires use of the theta package 
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li class="self-crumb">thetaf package</li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">thetaf</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="thetaf/thetaf-library.html">thetaf</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    thetaf
+      0.3.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
