@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Set _filter option to control camera settings. HDR
+/// reduces blown out highlights.
 class SetFilterHdrButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

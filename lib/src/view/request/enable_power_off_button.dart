@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// This option will set the camera to power off automatically.
 class EnablePowerOffButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

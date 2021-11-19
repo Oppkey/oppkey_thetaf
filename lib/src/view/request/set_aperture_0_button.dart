@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Exposure program (exposureProgram) must be set to Manual or Aperture
+/// Priority. Possible settings are 0 (auto), 2.1, 3.5, 5.6
 class SetAperture0Button extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -37,7 +39,7 @@ class SetAperture0Button extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await await command('getOptions', parameters: {
+          var responseCheck = await command('getOptions', parameters: {
             'optionNames': ['aperture']
           });
           // combine the two strings

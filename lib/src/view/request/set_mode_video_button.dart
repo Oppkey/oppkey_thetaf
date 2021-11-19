@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Sets THETA to video mode to record videos.
 class SetModeVideoButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

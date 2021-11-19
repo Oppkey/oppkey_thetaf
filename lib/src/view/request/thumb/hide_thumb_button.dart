@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:thetaf/src/model/window_notifier.dart';
 
+/// Hide thumbnails.
 class HideThumbButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

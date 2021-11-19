@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Lists the 5 most recent videos on your THETA.
 class List5VideosButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

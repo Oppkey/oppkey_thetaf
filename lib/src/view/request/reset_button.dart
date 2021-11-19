@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Reset all settings and capture settings. Can not be undone.
+/// The camera will be restart automatically.
 class ResetButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

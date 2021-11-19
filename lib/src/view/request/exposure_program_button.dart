@@ -3,6 +3,13 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Sets which camera settings can be adjusted:
+///
+/// * Auto: Shutter speed, ISO and white balance are adjusted automatically
+/// according to the shooting environment.
+/// * Shutter: Shutter speed and white balance can be set.
+/// * ISO: ISO  and white balance can be set.
+/// * Manual: Shutter speed, ISO and white balance can be set.
 class ExposureProgramButton extends StatelessWidget {
   final ButtonStyle? style;
   final double height;

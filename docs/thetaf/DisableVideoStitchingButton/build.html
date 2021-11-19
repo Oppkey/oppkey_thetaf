@@ -123,7 +123,7 @@ Widget build(BuildContext context) {
         &#47;&#47; delay 250ms before sending the camera another command
         await Future.delayed(const Duration(milliseconds: 250));
         &#47;&#47; send command to check the option you just set
-        var responseCheck = await await command(&#39;getOptions&#39;, parameters: {
+        var responseCheck = await command(&#39;getOptions&#39;, parameters: {
           &#39;optionNames&#39;: [&#39;videoStitching&#39;]
         });
         &#47;&#47; combine the two strings
@@ -205,7 +205,7 @@ Widget build(BuildContext context) {
 <footer>
   <span class="no-break">
     thetaf
-      0.3.0
+      0.3.1
   </span>
 
   

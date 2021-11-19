@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Get the state of camera. Includes API version, batteryLevel,
+/// _latestFileUrl and more.
 class StateButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

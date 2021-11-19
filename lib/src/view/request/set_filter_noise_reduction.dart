@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Suitable for high definition shooting in
+/// dark conditions. ISO is automatically set to low sensitivity.
 class SetFilterNoiseReductionButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -38,7 +40,7 @@ class SetFilterNoiseReductionButton extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await await command('getOptions', parameters: {
+          var responseCheck = await command('getOptions', parameters: {
             'optionNames': ['_filter']
           });
           // combine the two strings

@@ -4,6 +4,8 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:thetaf/src/view/component/simple_button.dart';
 
+/// Get the state of camera. Includes API version, batteryLevel,
+/// _latestFileUrl and more.
 class StateButtonSimple extends StatelessWidget {
   final double fontSize;
   final Color textColor;

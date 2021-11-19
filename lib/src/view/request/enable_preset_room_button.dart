@@ -3,7 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// Only available for SC2B model.
+/// Only available for SC2B model. Good  for indoor shooting when there is
+/// a large variation in brightness between indoor and outdoors.
 class EnablePresetRoomButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -38,7 +39,7 @@ class EnablePresetRoomButton extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await await command('getOptions', parameters: {
+          var responseCheck = await command('getOptions', parameters: {
             'optionNames': ['_preset']
           });
           // combine the two strings

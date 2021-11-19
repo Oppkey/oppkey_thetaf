@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// You can set _bitrate to Fine or Normal (shooting mode must be set to video),
+/// or to Auto (shooting mode must be set to image or live streaming.
 class SetBitrateVideoNormalButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -37,7 +39,7 @@ class SetBitrateVideoNormalButton extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await await command('getOptions', parameters: {
+          var responseCheck = await command('getOptions', parameters: {
             'optionNames': ['_bitrate']
           });
           // combine the two strings

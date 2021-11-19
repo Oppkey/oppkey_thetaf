@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Control the two lenses of the THETA camera independently. Good for situations
+/// when lighting varies significantly, such as inside a car.
 class EnablePresetLensbylensexposureButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -38,7 +40,7 @@ class EnablePresetLensbylensexposureButton extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await await command('getOptions', parameters: {
+          var responseCheck = await command('getOptions', parameters: {
             'optionNames': ['_preset']
           });
           // combine the two strings

@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Sets camera to automatically detect and center faces in the image.
 class EnablePresetFaceButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -37,7 +38,7 @@ class EnablePresetFaceButton extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await await command('getOptions', parameters: {
+          var responseCheck = await command('getOptions', parameters: {
             'optionNames': ['_preset']
           });
           // combine the two strings

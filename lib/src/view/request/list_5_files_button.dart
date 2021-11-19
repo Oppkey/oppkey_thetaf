@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Lists the 5 most recent files on your THETA.
 class List5FilesButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

@@ -1,0 +1,12 @@
+dartdoc:
+  categories:
+    "Response":
+      markdown: doc_template/response.md
+      name: Response
+    "Z1":
+      markdown: doc_template/z1.md
+      name: Z1
+    "SC2":
+      markdown: doc_template/sc2.md
+      name: "SC2"
+  categoryOrder: ["Z1", "SC2", "Response"]

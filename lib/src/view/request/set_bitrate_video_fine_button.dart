@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// You can set _bitrate to Fine or Normal (shooting mode must be set to video),
+/// or to Auto (shooting mode must be set to image or live streaming.
 class SetBitrateVideoFineButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

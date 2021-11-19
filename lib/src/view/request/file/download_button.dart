@@ -4,6 +4,7 @@ import 'package:thetaf/src/command/file/get_path.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:thetaf/src/view/component/simple_button.dart';
 
+/// Download the image.
 class DownloadButton extends StatelessWidget {
   final Color textColor;
   final Color backgroundColor;

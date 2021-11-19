@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// [label] EV is Exposure Compensation. It works in automatic mode. This
+/// EV is Exposure Compensation. It works in automatic mode. This
 /// button sets EV to 0.
 class SetExposureCompensation0Button extends StatelessWidget {
   final ButtonStyle? style;
@@ -40,7 +40,7 @@ class SetExposureCompensation0Button extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await await command('getOptions', parameters: {
+          var responseCheck = await command('getOptions', parameters: {
             'optionNames': ['exposureCompensation']
           });
           // combine the two strings

@@ -3,13 +3,14 @@ import 'package:flutter_syntax_view/flutter_syntax_view.dart';
 import 'package:provider/provider.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category Response}
 /// shows a window with syntax highlighting and line numbering.
 /// It is an Expanded Widget.  You can specify the space
 /// it takes up with flex.
 /// ```
 /// ThetaSyntaxWindow(flex: 10)
 /// ```
-/// The text if the [ThetaSyntaxWindow] cannot be selected.  To use
+/// The text of the [ThetaSyntaxWindow] cannot be selected.  To use
 /// a window with selectable text, use [ResponseWindow]
 class ThetaSyntaxWindow extends StatelessWidget {
   final int flex;

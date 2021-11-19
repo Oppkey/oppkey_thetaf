@@ -3,8 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// label: 'new label',
-/// example `label: 'DELETE EVERYTHING',`
+/// Deletes all media on the camera, both images and videos. Can not be undone.
 class DeleteAllFilesButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -28,7 +27,6 @@ class DeleteAllFilesButton extends StatelessWidget {
         focusNode: focusNode,
         autofocus: autofocus,
         clipBehavior: clipBehavior,
-        //TODO: This button works great now but needs to be tested more
         onPressed: () async {
           var response = await command('delete', parameters: {
             'fileUrls': ['all']

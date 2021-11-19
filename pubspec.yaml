@@ -1,7 +1,7 @@
 name: thetaf
-description: Flutter widgets for RICOH THETA camera
-version: 0.3.0
-homepage:
+description: Oppkey Widgets for RICOH THETA camera mobile and desktop development
+version: 0.3.1
+homepage: https://oppkey.github.io/oppkey_theta_atk/
 publish_to: none
 
 environment:
@@ -12,9 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   theta:
-    git:
-      url: https://github.com/Oppkey/oppkey_theta.git
-      ref: v0.3.0
+    path: ../theta
   provider: ^6.0.1    
   http: ^0.13.4
   flutter_syntax_view: ^4.0.0

@@ -3,6 +3,9 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category Z1}
+/// Camera shake and subject shake are reduced for
+/// images that are shot handheld.
 class SetFilterHhhdrButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

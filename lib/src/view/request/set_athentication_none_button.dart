@@ -3,6 +3,9 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category Z1}
+/// For setting authentication when connecting to a smartphone.
+/// _networkType must be in client mode.
 class SetAuthenticationNoneButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

@@ -3,7 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// Can set ON or OFF. Only available for models Z1, not SC2 or SC2B.
+/// Can set bluetooth power to ON or OFF. Only available for models Z1,
+/// not SC2 or SC2B.
 class SetBluetoothPowerOnButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -38,7 +39,7 @@ class SetBluetoothPowerOnButton extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await await command('getOptions', parameters: {
+          var responseCheck = await command('getOptions', parameters: {
             'optionNames': ['_bluetoothPower']
           });
           // combine the two strings

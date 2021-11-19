@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// If this option is used, video is recorded in dual fisheye (two hemispheres).
+/// Only for Z1.
 class DisableVideoStitchingButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -37,7 +39,7 @@ class DisableVideoStitchingButton extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await await command('getOptions', parameters: {
+          var responseCheck = await command('getOptions', parameters: {
             'optionNames': ['videoStitching']
           });
           // combine the two strings

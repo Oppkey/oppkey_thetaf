@@ -2,6 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category Response}
+/// Text response window with selectable text.
+/// Although there is no syntax highlighting or line numbers
+/// the backgroundColor of the response window can be set
+/// as well as the textColor and fontSize
+/// To get syntax highlighting and line numbering, use
+/// [ThetaSyntaxWindow]. ThetaSyntaxWindow does not have selectable text.
+/// If you want to show thumbnails, use [ThumbWindow].
 class ResponseWindow extends StatelessWidget {
   final int flex;
   final Color backgroundColor;

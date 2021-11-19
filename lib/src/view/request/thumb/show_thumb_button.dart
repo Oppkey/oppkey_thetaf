@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/window_notifier.dart';
 
+/// Show thumbnails
 class ShowThumbButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

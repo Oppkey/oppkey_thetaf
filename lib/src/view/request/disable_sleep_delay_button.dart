@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Camera will not go to sleep if this option is set.
 class DisableSleepDelayButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Deletes all videos on the camera, does not delete images. Can not be undone.
 class DeleteAllVideosButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

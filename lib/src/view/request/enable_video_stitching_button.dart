@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// If this option is used, video is recorded in equirectagular format.
 class EnableVideoStitchingButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

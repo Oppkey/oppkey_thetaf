@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Gets info which includes model, firmware version, API version,
+/// serial number, uptime, and more.
 class InfoButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thetaf/src/command/command.dart';
 
+/// Take a picture!
 class TakePictureButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

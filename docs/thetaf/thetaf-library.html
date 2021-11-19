@@ -64,8 +64,7 @@ requires use of the theta package</p>
 
 </dt>
 <dd>
-  label: 'new label',
-example <code>label: 'DELETE EVERYTHING',</code> 
+  Deletes all media on the camera, both images and videos. Can not be undone. 
 </dd>
 
         <dt id="DeleteAllImagesButton">
@@ -73,7 +72,8 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Bug possible. Deletes all files, video and images, not just images.
+Can not be undone. 
 </dd>
 
         <dt id="DeleteAllVideosButton">
@@ -81,7 +81,7 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Deletes all videos on the camera, does not delete images. Can not be undone. 
 </dd>
 
         <dt id="DisablePowerOffButton">
@@ -89,7 +89,7 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Camera will not power down automatically if this option is set. 
 </dd>
 
         <dt id="DisableSleepDelayButton">
@@ -97,7 +97,7 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Camera will not go to sleep if this option is set. 
 </dd>
 
         <dt id="DisableVideoStitchingButton">
@@ -105,7 +105,8 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  If this option is used, video is recorded in dual fisheye (two hemispheres).
+Only for Z1. 
 </dd>
 
         <dt id="DownloadButton">
@@ -121,7 +122,7 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  This option will set the camera to power off automatically. 
 </dd>
 
         <dt id="EnablePresetFaceButton">
@@ -129,7 +130,7 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Sets camera to automatically detect and center faces in the image. 
 </dd>
 
         <dt id="EnablePresetLensbylensexposureButton">
@@ -137,7 +138,8 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Control the two lenses of the THETA camera independently. Good for situations
+when lighting varies significantly, such as inside a car. 
 </dd>
 
         <dt id="EnablePresetNightviewButton">
@@ -145,7 +147,8 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Utilizes dynamic range compensation and noise reduction to produce
+good night time images. 
 </dd>
 
         <dt id="EnablePresetRoomButton">
@@ -153,7 +156,8 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-  Only available for SC2B model. 
+  Only available for SC2B model. Good  for indoor shooting when there is
+a large variation in brightness between indoor and outdoors. 
 </dd>
 
         <dt id="EnableSleepDelayButton">
@@ -161,7 +165,7 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Camera will enter sleep mode. 
 </dd>
 
         <dt id="EnableVideoStitchingButton">
@@ -169,7 +173,7 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  If this option is used, video is recorded in equirectagular format. 
 </dd>
 
         <dt id="ExposureProgramButton">
@@ -177,7 +181,41 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Sets which camera settings can be adjusted: <a href="../thetaf/ExposureProgramButton-class.html">[...]</a>
+</dd>
+
+        <dt id="GetDateTimeZoneButton">
+  <span class="name "><a href="../thetaf/GetDateTimeZoneButton-class.html">GetDateTimeZoneButton</a></span> 
+
+</dt>
+<dd>
+  Gets current Date and Time zone. <a href="../thetaf/GetDateTimeZoneButton-class.html">[...]</a>
+</dd>
+
+        <dt id="GetRemainingPicsButton">
+  <span class="name "><a href="../thetaf/GetRemainingPicsButton-class.html">GetRemainingPicsButton</a></span> 
+
+</dt>
+<dd>
+  Gets an estimated remaining number of shots for
+the current shooting settings. 
+</dd>
+
+        <dt id="GetRemainingSpaceButton">
+  <span class="name "><a href="../thetaf/GetRemainingSpaceButton-class.html">GetRemainingSpaceButton</a></span> 
+
+</dt>
+<dd>
+  Gets the remaining usable storage space on the camera in bytes. 
+</dd>
+
+        <dt id="GetRemainingVideoButton">
+  <span class="name "><a href="../thetaf/GetRemainingVideoButton-class.html">GetRemainingVideoButton</a></span> 
+
+</dt>
+<dd>
+  Gets the estimated remaining shooting time in seconds
+for the current video shooting settings. 
 </dd>
 
         <dt id="HideThumbButton">
@@ -193,7 +231,17 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Gets info which includes model, firmware version, API version,
+serial number, uptime, and more. 
+</dd>
+
+        <dt id="InfoButtonSimple">
+  <span class="name "><a href="../thetaf/InfoButtonSimple-class.html">InfoButtonSimple</a></span> 
+
+</dt>
+<dd>
+  Gets info which includes model, firmware version, API version,
+serial number, uptime, and more. 
 </dd>
 
         <dt id="List5FilesButton">
@@ -201,7 +249,7 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Lists the 5 most recent files on your THETA. 
 </dd>
 
         <dt id="List5VideosButton">
@@ -209,19 +257,19 @@ example <code>label: 'DELETE EVERYTHING',</code>
 
 </dt>
 <dd>
-   
+  Lists the 5 most recent videos on your THETA. 
 </dd>
 
         <dt id="LivePreview">
   <span class="name "><a href="../thetaf/LivePreview-class.html">LivePreview</a></span> 
+    <span class="category z1 cp-0 linked" title="This is part of the Z1 Topic."><a href="../topics/Z1-topic.html">Z1</a></span>
+    <span class="category response cp-2 linked" title="This is part of the Response Topic."><a href="../topics/Response-topic.html">Response</a></span>
 
 </dt>
 <dd>
   Shows live preview motion jpeg from the RICOH THETA camera
 Live preview is a stream and is managed by a <a href="https://api.flutter.dev/flutter/dart-async/StreamController-class.html">StreamController</a>.
-You must pass the StreamController. See this video
-for instructions. <a href="https://youtu.be/GrexxLqt2ak">https://youtu.be/GrexxLqt2ak</a>
-See this code example <a href="https://github.com/codetricity/theta_preview_tutorial_2/blob/main/lib/main.dart">https://github.com/codetricity/theta_preview_tutorial_2/blob/main/lib/main.dart</a> 
+You must pass the StreamController. <a href="../thetaf/LivePreview-class.html">[...]</a>
 </dd>
 
         <dt id="ResetButton">
@@ -229,23 +277,40 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-   
+  Reset all settings and capture settings. Can not be undone.
+The camera will be restart automatically. 
 </dd>
 
         <dt id="ResponseWindow">
   <span class="name "><a href="../thetaf/ResponseWindow-class.html">ResponseWindow</a></span> 
+    <span class="category response cp-2 linked" title="This is part of the Response Topic."><a href="../topics/Response-topic.html">Response</a></span>
 
 </dt>
 <dd>
-   
+  Text response window with selectable text.
+Although there is no syntax highlighting or line numbers
+the backgroundColor of the response window can be set
+as well as the textColor and fontSize
+To get syntax highlighting and line numbering, use
+<a href="../thetaf/ThetaSyntaxWindow-class.html">ThetaSyntaxWindow</a>. ThetaSyntaxWindow does not have selectable text.
+If you want to show thumbnails, use <a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a>. 
 </dd>
 
         <dt id="Sc2GetOptionsButton">
   <span class="name "><a href="../thetaf/Sc2GetOptionsButton-class.html">Sc2GetOptionsButton</a></span> 
+    <span class="category sc2 cp-1 linked" title="This is part of the SC2 Topic."><a href="../topics/SC2-topic.html">SC2</a></span>
 
 </dt>
 <dd>
-   
+  Displays all options available for the SC2. 
+</dd>
+
+        <dt id="Sc2GetOptionsButtonSimple">
+  <span class="name "><a href="../thetaf/Sc2GetOptionsButtonSimple-class.html">Sc2GetOptionsButtonSimple</a></span> 
+
+</dt>
+<dd>
+  Displays all options available for the SC2. 
 </dd>
 
         <dt id="SetAperture0Button">
@@ -253,7 +318,8 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-   
+  Exposure program (exposureProgram) must be set to Manual or Aperture
+Priority. Possible settings are 0 (auto), 2.1, 3.5, 5.6 
 </dd>
 
         <dt id="SetAperture2dot1Button">
@@ -261,7 +327,8 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-   
+  Exposure program (exposureProgram) must be set to Manual or Aperture
+Priority. Possible settings are 0 (auto), 2.1, 3.5, 5.6 
 </dd>
 
         <dt id="SetAperture3dot5Button">
@@ -269,7 +336,8 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-   
+  Exposure program (exposureProgram) must be set to Manual or Aperture
+Priority. Possible settings are 0 (auto), 2.1, 3.5, 5.6 
 </dd>
 
         <dt id="SetAperture5dot6Button">
@@ -277,31 +345,28 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-   
+  Exposure program (exposureProgram) must be set to Manual or Aperture
+Priority. Possible settings are 0 (auto), 2.1, 3.5, 5.6 
 </dd>
 
         <dt id="SetAuthenticationDigestButton">
   <span class="name "><a href="../thetaf/SetAuthenticationDigestButton-class.html">SetAuthenticationDigestButton</a></span> 
+    <span class="category z1 cp-0 linked" title="This is part of the Z1 Topic."><a href="../topics/Z1-topic.html">Z1</a></span>
 
 </dt>
 <dd>
-   
+  For setting authentication when connecting to a smartphone.
+_networkType must be in client mode. 
 </dd>
 
         <dt id="SetAuthenticationNoneButton">
   <span class="name "><a href="../thetaf/SetAuthenticationNoneButton-class.html">SetAuthenticationNoneButton</a></span> 
+    <span class="category z1 cp-0 linked" title="This is part of the Z1 Topic."><a href="../topics/Z1-topic.html">Z1</a></span>
 
 </dt>
 <dd>
-   
-</dd>
-
-        <dt id="SetAutobracketNumbersButton">
-  <span class="name "><a href="../thetaf/SetAutobracketNumbersButton-class.html">SetAutobracketNumbersButton</a></span> 
-
-</dt>
-<dd>
-  Tells you how many brackets are set when setting bracketed shooting. 
+  For setting authentication when connecting to a smartphone.
+_networkType must be in client mode. 
 </dd>
 
         <dt id="SetBitrateImageAutoButton">
@@ -309,7 +374,8 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-   
+  You can set _bitrate to Fine or Normal (shooting mode must be set to video),
+or to Auto (shooting mode must be set to image or live streaming. 
 </dd>
 
         <dt id="SetBitrateVideoFineButton">
@@ -317,7 +383,8 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-   
+  You can set _bitrate to Fine or Normal (shooting mode must be set to video),
+or to Auto (shooting mode must be set to image or live streaming. 
 </dd>
 
         <dt id="SetBitrateVideoNormalButton">
@@ -325,7 +392,8 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-   
+  You can set _bitrate to Fine or Normal (shooting mode must be set to video),
+or to Auto (shooting mode must be set to image or live streaming. 
 </dd>
 
         <dt id="SetBluetoothPowerOffButton">
@@ -333,7 +401,8 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-  Can set ON or OFF. Only available for models Z1, not SC2 or SC2B. 
+  Can set bluetooth power to ON or OFF. Only available for models Z1,
+not SC2 or SC2B. 
 </dd>
 
         <dt id="SetBluetoothPowerOnButton">
@@ -341,7 +410,48 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-  Can set ON or OFF. Only available for models Z1, not SC2 or SC2B. 
+  Can set bluetooth power to ON or OFF. Only available for models Z1,
+not SC2 or SC2B. 
+</dd>
+
+        <dt id="SetColorTemp2500Button">
+  <span class="name "><a href="../thetaf/SetColorTemp2500Button-class.html">SetColorTemp2500Button</a></span> 
+
+</dt>
+<dd>
+  Color Temperature (CT) or White Balance (WB). The higher the rating
+(expressed in K for Kelvin), the whiter the light
+will be. Can be set from 2500 to 10,000, in 100-Kelvin units. 
+</dd>
+
+        <dt id="SetColorTemp5000Button">
+  <span class="name "><a href="../thetaf/SetColorTemp5000Button-class.html">SetColorTemp5000Button</a></span> 
+
+</dt>
+<dd>
+  Color Temperature (CT) or White Balance (WB). The higher the rating
+(expressed in K for Kelvin), the whiter the light
+will be. Can be set from 2500 to 10,000, in 100-Kelvin units. 
+</dd>
+
+        <dt id="SetColorTemp7500Button">
+  <span class="name "><a href="../thetaf/SetColorTemp7500Button-class.html">SetColorTemp7500Button</a></span> 
+
+</dt>
+<dd>
+  Color Temperature (CT) or White Balance (WB). The higher the rating
+(expressed in K for Kelvin), the whiter the light
+will be. Can be set from 2500 to 10,000, in 100-Kelvin units. 
+</dd>
+
+        <dt id="SetColorTemp10000Button">
+  <span class="name "><a href="../thetaf/SetColorTemp10000Button-class.html">SetColorTemp10000Button</a></span> 
+
+</dt>
+<dd>
+  Color Temperature (CT) or White Balance (WB). The higher the rating
+(expressed in K for Kelvin), the whiter the light
+will be. Can be set from 2500 to 10,000, in 100-Kelvin units. 
 </dd>
 
         <dt id="SetExposureCompensation0Button">
@@ -349,7 +459,7 @@ See this code example <a href="https://github.com/codetricity/theta_preview_tuto
 
 </dt>
 <dd>
-  <a href="../thetaf/SetExposureCompensation0Button/label.html">label</a> EV is Exposure Compensation. It works in automatic mode. This
+  EV is Exposure Compensation. It works in automatic mode. This
 button sets EV to 0. 
 </dd>
 
@@ -358,7 +468,8 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  EV is Exposure Compensation. It works in automatic mode. This
+button sets EV to 1. 
 </dd>
 
         <dt id="SetExposureCompensation2Button">
@@ -366,7 +477,8 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  EV is Exposure Compensation. It works in automatic mode. This
+button sets EV to 2. 
 </dd>
 
         <dt id="SetExposureCompensationneg1Button">
@@ -374,7 +486,8 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  EV is Exposure Compensation. It works in automatic mode. This
+button sets EV to -1. 
 </dd>
 
         <dt id="SetExposureCompensationneg2Button">
@@ -382,7 +495,8 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  EV is Exposure Compensation. It works in automatic mode. This
+button sets EV to -2. 
 </dd>
 
         <dt id="SetFilterDrcompButton">
@@ -390,7 +504,8 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Set _filter option to control camera settings. DR Compensation
+reduces blown out highlights. 
 </dd>
 
         <dt id="SetFilterHdrButton">
@@ -398,15 +513,18 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Set _filter option to control camera settings. HDR
+reduces blown out highlights. 
 </dd>
 
         <dt id="SetFilterHhhdrButton">
   <span class="name "><a href="../thetaf/SetFilterHhhdrButton-class.html">SetFilterHhhdrButton</a></span> 
+    <span class="category z1 cp-0 linked" title="This is part of the Z1 Topic."><a href="../topics/Z1-topic.html">Z1</a></span>
 
 </dt>
 <dd>
-   
+  Camera shake and subject shake are reduced for
+images that are shot handheld. 
 </dd>
 
         <dt id="SetFilterNoiseReductionButton">
@@ -414,7 +532,8 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Suitable for high definition shooting in
+dark conditions. ISO is automatically set to low sensitivity. 
 </dd>
 
         <dt id="SetFilterOffButton">
@@ -422,7 +541,89 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Not using any _filter options. 
+</dd>
+
+        <dt id="SetFunctionMySettingButton">
+  <span class="name "><a href="../thetaf/SetFunctionMySettingButton-class.html">SetFunctionMySettingButton</a></span> 
+
+</dt>
+<dd>
+  Set shooting setting to My Setting. Setting at the same time as
+exposureDelay will result in an error. 
+</dd>
+
+        <dt id="SetFunctionNormalButton">
+  <span class="name "><a href="../thetaf/SetFunctionNormalButton-class.html">SetFunctionNormalButton</a></span> 
+
+</dt>
+<dd>
+  Set shooting setting to normal. Setting at the same time as
+exposureDelay will result in an error. 
+</dd>
+
+        <dt id="SetFunctionSelfTimerButton">
+  <span class="name "><a href="../thetaf/SetFunctionSelfTimerButton-class.html">SetFunctionSelfTimerButton</a></span> 
+
+</dt>
+<dd>
+  Set shooting setting to self-timer. Setting at the same time as
+exposureDelay will result in an error. 
+</dd>
+
+        <dt id="SetIso80Button">
+  <span class="name "><a href="../thetaf/SetIso80Button-class.html">SetIso80Button</a></span> 
+
+</dt>
+<dd>
+  exposureProgram must be set to Manual or ISO Priority.
+Possible iso settings for Z1 are: 80, 100, 125, 160, 200, 250, 320, 400,
+500, 640, 800, 1000, 1250, 1600, 2000, 2500, 3200, 4000, 5000, 6400.
+Possible iso settings for SC2 are different from Z1. 
+</dd>
+
+        <dt id="SetIso200Button">
+  <span class="name "><a href="../thetaf/SetIso200Button-class.html">SetIso200Button</a></span> 
+
+</dt>
+<dd>
+  exposureProgram must be set to Manual or ISO Priority.
+Possible iso settings for Z1 are: 80, 100, 125, 160, 200, 250, 320, 400,
+500, 640, 800, 1000, 1250, 1600, 2000, 2500, 3200, 4000, 5000, 6400.
+Possible iso settings for SC2 are different from Z1. 
+</dd>
+
+        <dt id="SetIso640Button">
+  <span class="name "><a href="../thetaf/SetIso640Button-class.html">SetIso640Button</a></span> 
+
+</dt>
+<dd>
+  exposureProgram must be set to Manual or ISO Priority.
+Possible iso settings for Z1 are: 80, 100, 125, 160, 200, 250, 320, 400,
+500, 640, 800, 1000, 1250, 1600, 2000, 2500, 3200, 4000, 5000, 6400.
+Possible iso settings for SC2 are different from Z1. 
+</dd>
+
+        <dt id="SetIso2000Button">
+  <span class="name "><a href="../thetaf/SetIso2000Button-class.html">SetIso2000Button</a></span> 
+
+</dt>
+<dd>
+  exposureProgram must be set to Manual or ISO Priority.
+Possible iso settings for Z1 are: 80, 100, 125, 160, 200, 250, 320, 400,
+500, 640, 800, 1000, 1250, 1600, 2000, 2500, 3200, 4000, 5000, 6400.
+Possible iso settings for SC2 are different from Z1. 
+</dd>
+
+        <dt id="SetIso6400Button">
+  <span class="name "><a href="../thetaf/SetIso6400Button-class.html">SetIso6400Button</a></span> 
+
+</dt>
+<dd>
+  exposureProgram must be set to Manual or ISO Priority.
+Possible iso settings for Z1 are: 80, 100, 125, 160, 200, 250, 320, 400,
+500, 640, 800, 1000, 1250, 1600, 2000, 2500, 3200, 4000, 5000, 6400.
+Possible iso settings for SC2 are different from Z1. 
 </dd>
 
         <dt id="SetModeImageButton">
@@ -430,7 +631,7 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Sets THETA to image mode to take pictures. 
 </dd>
 
         <dt id="SetModeVideoButton">
@@ -438,7 +639,171 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Sets THETA to video mode to record videos. 
+</dd>
+
+        <dt id="SetShutterVolume5Button">
+  <span class="name "><a href="../thetaf/SetShutterVolume5Button-class.html">SetShutterVolume5Button</a></span> 
+
+</dt>
+<dd>
+  Shutter volume can be set from 0-100. 
+</dd>
+
+        <dt id="SetShutterVolume20Button">
+  <span class="name "><a href="../thetaf/SetShutterVolume20Button-class.html">SetShutterVolume20Button</a></span> 
+
+</dt>
+<dd>
+  Shutter volume can be set from 0-100. 
+</dd>
+
+        <dt id="SetShutterVolume50Button">
+  <span class="name "><a href="../thetaf/SetShutterVolume50Button-class.html">SetShutterVolume50Button</a></span> 
+
+</dt>
+<dd>
+  Shutter volume can be set from 0-100. 
+</dd>
+
+        <dt id="SetShutterVolume100Button">
+  <span class="name "><a href="../thetaf/SetShutterVolume100Button-class.html">SetShutterVolume100Button</a></span> 
+
+</dt>
+<dd>
+  Shutter volume can be set from 0-100. 
+</dd>
+
+        <dt id="SetShutterVolumeOffButton">
+  <span class="name "><a href="../thetaf/SetShutterVolumeOffButton-class.html">SetShutterVolumeOffButton</a></span> 
+
+</dt>
+<dd>
+  Shutter volume can be set from 0-100. 
+</dd>
+
+        <dt id="SetTimeShiftFirstFrontButton">
+  <span class="name "><a href="../thetaf/SetTimeShiftFirstFrontButton-class.html">SetTimeShiftFirstFrontButton</a></span> 
+
+</dt>
+<dd>
+  Set the shooting order for Time shift shooting.
+Can set the firstShooting to “front” which means shooting
+from rear side (side with the OLED monitor)
+after shooting from front side (side with THETA logo). 
+</dd>
+
+        <dt id="SetTimeShiftFirstIntervalButton">
+  <span class="name "><a href="../thetaf/SetTimeShiftFirstIntervalButton-class.html">SetTimeShiftFirstIntervalButton</a></span> 
+
+</dt>
+<dd>
+  Set the interval for the first shot for Time shift shooting.
+Can also set the interval for the second shot independently. 
+</dd>
+
+        <dt id="SetWhiteBalanceAutoButton">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceAutoButton-class.html">SetWhiteBalanceAutoButton</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to auto. 
+</dd>
+
+        <dt id="SetWhiteBalanceCloudyButton">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceCloudyButton-class.html">SetWhiteBalanceCloudyButton</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to cloudy-daylight. 
+</dd>
+
+        <dt id="SetWhiteBalanceColorTempButton">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceColorTempButton-class.html">SetWhiteBalanceColorTempButton</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to _colorTemperature.
+Color Temperature (CT) settings are specified by the _colorTemperature
+option for S and SC. 
+</dd>
+
+        <dt id="SetWhiteBalanceDaylightButton">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceDaylightButton-class.html">SetWhiteBalanceDaylightButton</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to daylight. 
+</dd>
+
+        <dt id="SetWhiteBalanceFluorescent1Button">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceFluorescent1Button-class.html">SetWhiteBalanceFluorescent1Button</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to _dayLightFluorescent which is called
+Fluorescent light 1 (daylight). 
+</dd>
+
+        <dt id="SetWhiteBalanceFluorescent2Button">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceFluorescent2Button-class.html">SetWhiteBalanceFluorescent2Button</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to _dayLightFluorescent which is called
+Fluorescent light 2 (natural white). 
+</dd>
+
+        <dt id="SetWhiteBalanceFluorescent3Button">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceFluorescent3Button-class.html">SetWhiteBalanceFluorescent3Button</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to fluorescent which is called
+Fluorescent light 3 (white). 
+</dd>
+
+        <dt id="SetWhiteBalanceFluorescent4Button">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceFluorescent4Button-class.html">SetWhiteBalanceFluorescent4Button</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to _bulbFluorescent which is called
+Fluorescent light 4 (light bulb color). 
+</dd>
+
+        <dt id="SetWhiteBalanceIncandescent1Button">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceIncandescent1Button-class.html">SetWhiteBalanceIncandescent1Button</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to Incandescent light 1. 
+</dd>
+
+        <dt id="SetWhiteBalanceIncandescent2Button">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceIncandescent2Button-class.html">SetWhiteBalanceIncandescent2Button</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to _warmWhiteFluorescent which is called
+Incandescent light 2. 
+</dd>
+
+        <dt id="SetWhiteBalanceShadeButton">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceShadeButton-class.html">SetWhiteBalanceShadeButton</a></span> 
+
+</dt>
+<dd>
+  Set White Balance to shade. 
+</dd>
+
+        <dt id="SetWhiteBalanceUnderwaterButton">
+  <span class="name "><a href="../thetaf/SetWhiteBalanceUnderwaterButton-class.html">SetWhiteBalanceUnderwaterButton</a></span> 
+
+</dt>
+<dd>
+  Based on Oppkey testing, DOES NOT WORK with Z1. Set White Balance
+_underwater. 
 </dd>
 
         <dt id="ShowThumbButton">
@@ -454,7 +819,7 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Start video recording. 
 </dd>
 
         <dt id="StateButton">
@@ -462,7 +827,17 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Get the state of camera. Includes API version, batteryLevel,
+_latestFileUrl and more. 
+</dd>
+
+        <dt id="StateButtonSimple">
+  <span class="name "><a href="../thetaf/StateButtonSimple-class.html">StateButtonSimple</a></span> 
+
+</dt>
+<dd>
+  Get the state of camera. Includes API version, batteryLevel,
+_latestFileUrl and more. 
 </dd>
 
         <dt id="StopVideoCaptureButton">
@@ -470,7 +845,7 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Ends video recording. 
 </dd>
 
         <dt id="TakePictureButton">
@@ -478,11 +853,12 @@ button sets EV to 0.
 
 </dt>
 <dd>
-   
+  Take a picture! 
 </dd>
 
         <dt id="ThetaSyntaxWindow">
   <span class="name "><a href="../thetaf/ThetaSyntaxWindow-class.html">ThetaSyntaxWindow</a></span> 
+    <span class="category response cp-2 linked" title="This is part of the Response Topic."><a href="../topics/Response-topic.html">Response</a></span>
 
 </dt>
 <dd>
@@ -504,6 +880,7 @@ import 'package:thetaf/thetaf.dart'; <a href="../thetaf/ThetaWindow-class.html">
 
         <dt id="ThumbWindow">
   <span class="name "><a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a></span> 
+    <span class="category response cp-2 linked" title="This is part of the Response Topic."><a href="../topics/Response-topic.html">Response</a></span>
 
 </dt>
 <dd>
@@ -511,15 +888,26 @@ import 'package:thetaf/thetaf.dart'; <a href="../thetaf/ThetaWindow-class.html">
 across on the horizontal axis. Each thumbnail will try to take up
 500px if space is available.
 It can display any number of thumbs that are saved in thumbData
-which is handled by the Provider package for state management. 
+which is handled by the Provider package for state management.
+There are two other button that you can use to switch between
+text and thumbnail displays. <a href="../thetaf/ThumbWindow-class.html">[...]</a>
 </dd>
 
         <dt id="Z1GetOptionsButton">
   <span class="name "><a href="../thetaf/Z1GetOptionsButton-class.html">Z1GetOptionsButton</a></span> 
+    <span class="category z1 cp-0 linked" title="This is part of the Z1 Topic."><a href="../topics/Z1-topic.html">Z1</a></span>
 
 </dt>
 <dd>
-   
+  Displays all options available for the Z1. 
+</dd>
+
+        <dt id="Z1GetOptionsButtonSimple">
+  <span class="name "><a href="../thetaf/Z1GetOptionsButtonSimple-class.html">Z1GetOptionsButtonSimple</a></span> 
+
+</dt>
+<dd>
+  Displays all options available for the Z1. 
 </dd>
 
       </dl>
@@ -595,6 +983,10 @@ list of 5 thumbs to <a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a>
 
     <h5><span class="package-name">thetaf</span> <span class="package-kind">package</span></h5>
     <ol>
+      <li class="section-title">Topics</li>
+        <li><a href="../topics/Response-topic.html">Response</a></li>
+        <li><a href="../topics/SC2-topic.html">SC2</a></li>
+        <li><a href="../topics/Z1-topic.html">Z1</a></li>
       <li class="section-title">Libraries</li>
       <li><a href="../thetaf/thetaf-library.html">thetaf</a></li>
 </ol>
@@ -620,26 +1012,35 @@ list of 5 thumbs to <a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a>
   <li><a href="../thetaf/EnableSleepDelayButton-class.html">EnableSleepDelayButton</a></li>
   <li><a href="../thetaf/EnableVideoStitchingButton-class.html">EnableVideoStitchingButton</a></li>
   <li><a href="../thetaf/ExposureProgramButton-class.html">ExposureProgramButton</a></li>
+  <li><a href="../thetaf/GetDateTimeZoneButton-class.html">GetDateTimeZoneButton</a></li>
+  <li><a href="../thetaf/GetRemainingPicsButton-class.html">GetRemainingPicsButton</a></li>
+  <li><a href="../thetaf/GetRemainingSpaceButton-class.html">GetRemainingSpaceButton</a></li>
+  <li><a href="../thetaf/GetRemainingVideoButton-class.html">GetRemainingVideoButton</a></li>
   <li><a href="../thetaf/HideThumbButton-class.html">HideThumbButton</a></li>
   <li><a href="../thetaf/InfoButton-class.html">InfoButton</a></li>
+  <li><a href="../thetaf/InfoButtonSimple-class.html">InfoButtonSimple</a></li>
   <li><a href="../thetaf/List5FilesButton-class.html">List5FilesButton</a></li>
   <li><a href="../thetaf/List5VideosButton-class.html">List5VideosButton</a></li>
   <li><a href="../thetaf/LivePreview-class.html">LivePreview</a></li>
   <li><a href="../thetaf/ResetButton-class.html">ResetButton</a></li>
   <li><a href="../thetaf/ResponseWindow-class.html">ResponseWindow</a></li>
   <li><a href="../thetaf/Sc2GetOptionsButton-class.html">Sc2GetOptionsButton</a></li>
+  <li><a href="../thetaf/Sc2GetOptionsButtonSimple-class.html">Sc2GetOptionsButtonSimple</a></li>
   <li><a href="../thetaf/SetAperture0Button-class.html">SetAperture0Button</a></li>
   <li><a href="../thetaf/SetAperture2dot1Button-class.html">SetAperture2dot1Button</a></li>
   <li><a href="../thetaf/SetAperture3dot5Button-class.html">SetAperture3dot5Button</a></li>
   <li><a href="../thetaf/SetAperture5dot6Button-class.html">SetAperture5dot6Button</a></li>
   <li><a href="../thetaf/SetAuthenticationDigestButton-class.html">SetAuthenticationDigestButton</a></li>
   <li><a href="../thetaf/SetAuthenticationNoneButton-class.html">SetAuthenticationNoneButton</a></li>
-  <li><a href="../thetaf/SetAutobracketNumbersButton-class.html">SetAutobracketNumbersButton</a></li>
   <li><a href="../thetaf/SetBitrateImageAutoButton-class.html">SetBitrateImageAutoButton</a></li>
   <li><a href="../thetaf/SetBitrateVideoFineButton-class.html">SetBitrateVideoFineButton</a></li>
   <li><a href="../thetaf/SetBitrateVideoNormalButton-class.html">SetBitrateVideoNormalButton</a></li>
   <li><a href="../thetaf/SetBluetoothPowerOffButton-class.html">SetBluetoothPowerOffButton</a></li>
   <li><a href="../thetaf/SetBluetoothPowerOnButton-class.html">SetBluetoothPowerOnButton</a></li>
+  <li><a href="../thetaf/SetColorTemp2500Button-class.html">SetColorTemp2500Button</a></li>
+  <li><a href="../thetaf/SetColorTemp5000Button-class.html">SetColorTemp5000Button</a></li>
+  <li><a href="../thetaf/SetColorTemp7500Button-class.html">SetColorTemp7500Button</a></li>
+  <li><a href="../thetaf/SetColorTemp10000Button-class.html">SetColorTemp10000Button</a></li>
   <li><a href="../thetaf/SetExposureCompensation0Button-class.html">SetExposureCompensation0Button</a></li>
   <li><a href="../thetaf/SetExposureCompensation1Button-class.html">SetExposureCompensation1Button</a></li>
   <li><a href="../thetaf/SetExposureCompensation2Button-class.html">SetExposureCompensation2Button</a></li>
@@ -650,17 +1051,46 @@ list of 5 thumbs to <a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a>
   <li><a href="../thetaf/SetFilterHhhdrButton-class.html">SetFilterHhhdrButton</a></li>
   <li><a href="../thetaf/SetFilterNoiseReductionButton-class.html">SetFilterNoiseReductionButton</a></li>
   <li><a href="../thetaf/SetFilterOffButton-class.html">SetFilterOffButton</a></li>
+  <li><a href="../thetaf/SetFunctionMySettingButton-class.html">SetFunctionMySettingButton</a></li>
+  <li><a href="../thetaf/SetFunctionNormalButton-class.html">SetFunctionNormalButton</a></li>
+  <li><a href="../thetaf/SetFunctionSelfTimerButton-class.html">SetFunctionSelfTimerButton</a></li>
+  <li><a href="../thetaf/SetIso80Button-class.html">SetIso80Button</a></li>
+  <li><a href="../thetaf/SetIso200Button-class.html">SetIso200Button</a></li>
+  <li><a href="../thetaf/SetIso640Button-class.html">SetIso640Button</a></li>
+  <li><a href="../thetaf/SetIso2000Button-class.html">SetIso2000Button</a></li>
+  <li><a href="../thetaf/SetIso6400Button-class.html">SetIso6400Button</a></li>
   <li><a href="../thetaf/SetModeImageButton-class.html">SetModeImageButton</a></li>
   <li><a href="../thetaf/SetModeVideoButton-class.html">SetModeVideoButton</a></li>
+  <li><a href="../thetaf/SetShutterVolume5Button-class.html">SetShutterVolume5Button</a></li>
+  <li><a href="../thetaf/SetShutterVolume20Button-class.html">SetShutterVolume20Button</a></li>
+  <li><a href="../thetaf/SetShutterVolume50Button-class.html">SetShutterVolume50Button</a></li>
+  <li><a href="../thetaf/SetShutterVolume100Button-class.html">SetShutterVolume100Button</a></li>
+  <li><a href="../thetaf/SetShutterVolumeOffButton-class.html">SetShutterVolumeOffButton</a></li>
+  <li><a href="../thetaf/SetTimeShiftFirstFrontButton-class.html">SetTimeShiftFirstFrontButton</a></li>
+  <li><a href="../thetaf/SetTimeShiftFirstIntervalButton-class.html">SetTimeShiftFirstIntervalButton</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceAutoButton-class.html">SetWhiteBalanceAutoButton</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceCloudyButton-class.html">SetWhiteBalanceCloudyButton</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceColorTempButton-class.html">SetWhiteBalanceColorTempButton</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceDaylightButton-class.html">SetWhiteBalanceDaylightButton</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceFluorescent1Button-class.html">SetWhiteBalanceFluorescent1Button</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceFluorescent2Button-class.html">SetWhiteBalanceFluorescent2Button</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceFluorescent3Button-class.html">SetWhiteBalanceFluorescent3Button</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceFluorescent4Button-class.html">SetWhiteBalanceFluorescent4Button</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceIncandescent1Button-class.html">SetWhiteBalanceIncandescent1Button</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceIncandescent2Button-class.html">SetWhiteBalanceIncandescent2Button</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceShadeButton-class.html">SetWhiteBalanceShadeButton</a></li>
+  <li><a href="../thetaf/SetWhiteBalanceUnderwaterButton-class.html">SetWhiteBalanceUnderwaterButton</a></li>
   <li><a href="../thetaf/ShowThumbButton-class.html">ShowThumbButton</a></li>
   <li><a href="../thetaf/StartVideoCaptureButton-class.html">StartVideoCaptureButton</a></li>
   <li><a href="../thetaf/StateButton-class.html">StateButton</a></li>
+  <li><a href="../thetaf/StateButtonSimple-class.html">StateButtonSimple</a></li>
   <li><a href="../thetaf/StopVideoCaptureButton-class.html">StopVideoCaptureButton</a></li>
   <li><a href="../thetaf/TakePictureButton-class.html">TakePictureButton</a></li>
   <li><a href="../thetaf/ThetaSyntaxWindow-class.html">ThetaSyntaxWindow</a></li>
   <li><a href="../thetaf/ThetaWindow-class.html">ThetaWindow</a></li>
   <li><a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a></li>
   <li><a href="../thetaf/Z1GetOptionsButton-class.html">Z1GetOptionsButton</a></li>
+  <li><a href="../thetaf/Z1GetOptionsButtonSimple-class.html">Z1GetOptionsButtonSimple</a></li>
 
 
 
@@ -681,7 +1111,7 @@ list of 5 thumbs to <a href="../thetaf/ThumbWindow-class.html">ThumbWindow</a>
 <footer>
   <span class="no-break">
     thetaf
-      0.3.0
+      0.3.1
   </span>
 
   

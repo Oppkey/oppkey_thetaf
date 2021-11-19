@@ -4,6 +4,8 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:thetaf/src/view/component/simple_button.dart';
 
+/// Gets info which includes model, firmware version, API version,
+/// serial number, uptime, and more.
 class InfoButtonSimple extends StatelessWidget {
   final Color textColor;
   final Color backgroundColor;

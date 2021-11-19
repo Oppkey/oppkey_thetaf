@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category SC2}
+/// Displays all options available for the SC2.
 class Sc2GetOptionsButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
