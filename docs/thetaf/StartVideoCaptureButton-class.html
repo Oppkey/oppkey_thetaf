@@ -51,8 +51,13 @@
 
     
 <section class="desc markdown">
-  <p>Starts continuous shooting. The shooting method changes according
-to shooting mode (captureMode) and _mode settings.</p>
+  <p>If the camera is in video mode, this will start recording a video.
+Use with <a href="../thetaf/StopVideoCaptureButton-class.html">StopVideoCaptureButton</a> to stop the video.</p>
+<p>If the camera is in still image mode, it will start
+continuous shooting. The shooting method changes according
+to shooting mode (captureMode) and <code>_mode</code> parameter in cases
+where the camera is in still image mode.  If no <code>_mode</code> parameter
+is specified, then interval shooting with start.</p>
 </section>
 
 
@@ -446,6 +451,7 @@ tools and by <a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode
   <li><a href="../thetaf/SetWhiteBalanceShadeButton-class.html">SetWhiteBalanceShadeButton</a></li>
   <li><a href="../thetaf/SetWhiteBalanceUnderwaterButton-class.html">SetWhiteBalanceUnderwaterButton</a></li>
   <li><a href="../thetaf/ShowThumbButton-class.html">ShowThumbButton</a></li>
+  <li><a href="../thetaf/StartCaptureButton-class.html">StartCaptureButton</a></li>
   <li><a href="../thetaf/StartVideoCaptureButton-class.html">StartVideoCaptureButton</a></li>
   <li><a href="../thetaf/StateButton-class.html">StateButton</a></li>
   <li><a href="../thetaf/StateButtonSimple-class.html">StateButtonSimple</a></li>
