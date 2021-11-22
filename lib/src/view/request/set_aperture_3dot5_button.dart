@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category Z1}
 /// Exposure program (exposureProgram) must be set to Manual or Aperture
 /// Priority. Possible settings are 0 (auto), 2.1, 3.5, 5.6
 class SetAperture3dot5Button extends StatelessWidget {

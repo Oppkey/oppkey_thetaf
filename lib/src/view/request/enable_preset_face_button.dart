@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category SC2}
 /// Sets camera to automatically detect and center faces in the image.
 class EnablePresetFaceButton extends StatelessWidget {
   final ButtonStyle? style;

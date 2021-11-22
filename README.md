@@ -42,6 +42,18 @@ the camera as the access point
 
 ## Usage
 
+### add library to pubspec.yaml
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  # oppkey_thetaf widgets
+  thetaf:
+    git:
+      url: https://github.com/Oppkey/oppkey_thetaf.git
+```
+
 ### Start with `ThetaWindow` as root widget under `Scaffold`
 
 ```dart

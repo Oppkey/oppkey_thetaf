@@ -16,6 +16,9 @@ import 'package:flutter/material.dart';
 /// As of version 0.3.0, this does not work with the rest of the package.
 /// It will only work as a standalone demo
 ///
+/// Official RICOH API Reference -
+/// https://api.ricoh/docs/theta-web-api-v2.1/commands/camera.get_live_preview/
+///
 class LivePreview extends StatefulWidget {
   const LivePreview(this.controller, {Key? key}) : super(key: key);
   final StreamController controller;

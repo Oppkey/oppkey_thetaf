@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category SC2}
 /// Only available for SC2B model. Good  for indoor shooting when there is
 /// a large variation in brightness between indoor and outdoors.
 class EnablePresetRoomButton extends StatelessWidget {

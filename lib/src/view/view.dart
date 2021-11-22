@@ -87,3 +87,4 @@ export 'request/z1_get_options_button_simple.dart';
 export 'request/sc2_get_options_button_simple.dart';
 export 'request/state_button_simple.dart';
 export 'request/info_button_simple.dart';
+export 'request/start_capture_button.dart';

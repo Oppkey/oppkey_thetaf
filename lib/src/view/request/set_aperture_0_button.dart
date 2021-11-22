@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:theta/theta.dart';
+import 'package:theta/theta.dart' as theta;
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category Z1}
 /// Exposure program (exposureProgram) must be set to Manual or Aperture
 /// Priority. Possible settings are 0 (auto), 2.1, 3.5, 5.6
 class SetAperture0Button extends StatelessWidget {
@@ -29,7 +30,7 @@ class SetAperture0Button extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
-          var response = await setOption(name: 'aperture', value: 0);
+          var response = await theta.setOption(name: 'aperture', value: 0);
           // set title for response. Edit the line below
           // for each option
           response = 'attempting to set option for aperture\n'
@@ -39,7 +40,7 @@ class SetAperture0Button extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck = await command('getOptions', parameters: {
+          var responseCheck = await theta.command('getOptions', parameters: {
             'optionNames': ['aperture']
           });
           // combine the two strings

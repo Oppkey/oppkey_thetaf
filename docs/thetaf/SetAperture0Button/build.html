@@ -113,7 +113,7 @@ Widget build(BuildContext context) {
       autofocus: autofocus,
       clipBehavior: clipBehavior,
       onPressed: () async {
-        var response = await setOption(name: &#39;aperture&#39;, value: 0);
+        var response = await theta.setOption(name: &#39;aperture&#39;, value: 0);
         &#47;&#47; set title for response. Edit the line below
         &#47;&#47; for each option
         response = &#39;attempting to set option for aperture\n&#39;
@@ -123,7 +123,7 @@ Widget build(BuildContext context) {
         &#47;&#47; delay 250ms before sending the camera another command
         await Future.delayed(const Duration(milliseconds: 250));
         &#47;&#47; send command to check the option you just set
-        var responseCheck = await command(&#39;getOptions&#39;, parameters: {
+        var responseCheck = await theta.command(&#39;getOptions&#39;, parameters: {
           &#39;optionNames&#39;: [&#39;aperture&#39;]
         });
         &#47;&#47; combine the two strings

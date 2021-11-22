@@ -4,6 +4,7 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:thetaf/src/view/component/simple_button.dart';
 
+/// {@category SC2}
 /// Displays all options available for the SC2.
 class Sc2GetOptionsButtonSimple extends StatelessWidget {
   final double fontSize;

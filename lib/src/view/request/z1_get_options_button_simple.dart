@@ -4,6 +4,7 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:thetaf/src/view/component/simple_button.dart';
 
+/// {@category Z1}
 /// Displays all options available for the Z1.
 class Z1GetOptionsButtonSimple extends StatelessWidget {
   final double fontSize;

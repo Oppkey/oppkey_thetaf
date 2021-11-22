@@ -9,4 +9,7 @@ dartdoc:
     "SC2":
       markdown: doc_template/sc2.md
       name: "SC2"
+  # it looks like there is an open bug in the category order
+  # https://github.com/dart-lang/dartdoc/issues/2438
   categoryOrder: ["Z1", "SC2", "Response"]
+  favicon: doc_template/favicon.ico

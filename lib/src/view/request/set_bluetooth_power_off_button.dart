@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// {@category Z1}
 /// Can set bluetooth power to ON or OFF. Only available for models Z1,
 /// not SC2 or SC2B.
 class SetBluetoothPowerOffButton extends StatelessWidget {

@@ -257,10 +257,12 @@ packages:
   theta:
     dependency: "direct main"
     description:
-      path: "../theta"
-      relative: true
-    source: path
-    version: "0.3.1"
+      path: "."
+      ref: "v0.3.1"
+      resolved-ref: e1bb2bb122b1c9765c402ba26bf5f778c0ca08c3
+      url: "https://github.com/Oppkey/oppkey_theta.git"
+    source: git
+    version: "0.3.0"
   typed_data:
     dependency: transitive
     description:
